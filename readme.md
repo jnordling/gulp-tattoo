@@ -1,6 +1,6 @@
 # gulp-tattoo [![Build Status](https://travis-ci.org/jnordling/gulp-tattoo.svg?branch=master)](https://travis-ci.org/jnordling/gulp-tattoo)
 
-> My cat&#39;s meow gulp plugin
+> Tattoo your code with image-ascii and lissence 
 
 
 ## Install
