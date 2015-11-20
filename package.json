@@ -1,19 +1,31 @@
 {
   "name": "gulp-tattoo",
-  "version": "0.0.1",
-  "description": "node and gulp module for branding your code for production",
-  "main": "index.js",
+  "version": "0.0.0",
+  "description": "",
+  "license": "MIT",
+  "repository": "jnordling/gulp-tattoo",
+  "author": {
+    "name": "Jon Nordling",
+    "email": "jnordling@blueraster.com",
+    "url": "https://github.com/jnordling"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jnordling/gulp-tattoo.git"
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "gulpplugin"
+  ],
+  "dependencies": {
+    "gulp-util": "^3.0.1",
+    "through2": "^0.6.3"
   },
-  "author": "Jon Nordling <jonnordling@gmail.com> (http://geoodk.com)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jnordling/gulp-tattoo/issues"
-  },
-  "homepage": "https://github.com/jnordling/gulp-tattoo"
+  "devDependencies": {
+    "mocha": "*"
+  }
 }
