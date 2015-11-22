@@ -1,6 +1,6 @@
 {
   "name": "gulp-tattoo",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "license": "MIT",
   "repository": "jnordling/gulp-tattoo",
@@ -22,8 +22,11 @@
     "gulpplugin"
   ],
   "dependencies": {
+    "concat-with-sourcemaps": "^1.0.4",
     "eslint": "^1.9.0",
+    "fs": "0.0.2",
     "gulp-util": "^3.0.1",
+    "object-assign": "^4.0.1",
     "through2": "^0.6.3"
   },
   "devDependencies": {
