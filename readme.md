@@ -26,6 +26,9 @@ var asciiArt = '
                 |_|                                    \n\
 
 ';
+```
+
+```js
 
 var gulp = require('gulp');
 var tattoo = require('gulp-tattoo');
