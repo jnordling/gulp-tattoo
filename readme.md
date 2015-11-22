@@ -1,6 +1,8 @@
 # gulp-tattoo [![Build Status](https://travis-ci.org/jnordling/gulp-tattoo.svg?branch=master)](https://travis-ci.org/jnordling/gulp-tattoo)
 
-> Tattoo your code with image-ascii and lissence 
+> Tattoo your code with image-ascii and license 
+> A great way to brand you code and add project wide comments to your code
+> 
 
 
 ## Install
