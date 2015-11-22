@@ -15,12 +15,12 @@ module.exports = function (tattoo, data) {
 		throw new gutil.PluginError('gulp-tattoo', '`tattoo` required');
 	}
 
-	function BlockComment(extension){
+	function BlockComment(tattoo,extension){
 		var comment;
 		if(extension == '.html'){
-
+			comment = "<!--\n" + tattoo + "\n-->\n";
 		}else if(extension == '.css'){
-
+			comment = "/* \n" + tattoo + "\n*/\n";
 		}
 		return comment
 	}
@@ -29,7 +29,6 @@ module.exports = function (tattoo, data) {
 	    var filename;
 	    var concat;
 
-	    console.log(path.extname(file.path));
         // Checks that the files passed in Stream or Buffer
 	    if (file.isNull()) {
             return cb(null, file);
@@ -51,11 +50,12 @@ module.exports = function (tattoo, data) {
 	    	tattooInk = gutil.template(tattoo, extend({file : file, filename: filename}, data));
 	    }
 
-	    path.extname(file.path)
+	    var ext = path.extname(filename);
 
 	    concat = new Concat(true, filename);
+	    var tattooInk = BlockComment(tattooInk,ext);
 
-	    if (gutil.isBuffer(file)){
+	    if (file.isBuffer()){
 	      concat.add(filename, new Buffer(tattooInk));
 	    }else if(gutil.isStream(file) ){
 	      var stream = through();
